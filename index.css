@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre:wght@700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  color: var(--font-color);
+  float: none;
+}
+
+:root {
+  --spacing-1: 8px;
+  --spacing-2: 12px;
+  --spacing-3: 16px;
+  --spacing-4: 24px;
+
+  --border-radius: 12px;
+
+  --font-color: #323232;
+  --button-color: #323232;
+}
+
+.heart {
+  color: red;
+  animation-name: skills;
+
+}
+
+h2 {
+  font-family: "Proza Libre", sans-serif;
+  margin: 0;
+  margin-bottom: var(--spacing-2);
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0 var(--spacing-3);
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-3) 0;
+}
+
+.navigation-items {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  align-items: center;
+  margin: 0;
+}
+
+.navigation-item {
+  margin: var(--spacing-1);
+}
+
+.navigation-item:hover {
+  text-decoration: underline;
+}
+
+.portrait {
+  width: 300px;
+  border-radius: var(--border-radius);
+  flex-shrink: 0;
+  position: relative;
+  animation-name: portrait;
+  animation-duration: 3s;
+}
+
+@keyframes randomfacts {
+  0% {
+    left: px;
+    top: 1000px;
+  }
+
+  25% {
+    left: px;
+    top: px;
+  }
+
+  50% {
+    left: px;
+    top: 30px;
+  }
+
+  100% {
+    left: px;
+    top: 0px;
+  }
+}
+
+@keyframes portrait {
+  0% {
+    left: px;
+    bottom: 500px;
+  }
+
+  25% {
+    left: px;
+    bottom: px;
+  }
+
+  50% {
+    left: px;
+    bottom: 30px;
+  }
+
+  100% {
+    left: px;
+    bottom: 0px;
+  }
+}
+
+.about-me-container {
+  display: flex;
+}
+
+.about-me-text-container {
+  margin-right: var(--spacing-3);
+  position: relative;
+  animation-name: aboutme;
+  animation-duration: 3s;
+}
+
+@keyframes aboutme {
+  0% {
+    right: 1000px;
+    top: px;
+  }
+
+  25% {
+    right: 50px;
+    top: px;
+  }
+
+  50% {
+    right: 20px;
+    top: px;
+  }
+
+  100% {
+    right: 0px;
+    top: 0px;
+  }
+}
+
+#myDIV {
+  display: none;
+  width: 100%;
+  height: 500px;
+  margin-top: 10px;
+}
+
+#randomDiv {
+  width: fit-content;
+  height: fit-content;
+}
+
+button {
+  width: 80px;
+  height: 35px;
+  background-color: var(--button-color);
+  color: aliceblue;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  padding: 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(16, 36, 36);
+}
+
+footer {
+  margin-top: auto;
+  padding: var(--spacing-2) 0;
+  text-align: center;
+}
+
+section {
+  padding: var(--spacing-3) 0;
+}
+
+#projects {
+  position: relative;
+  animation-name: project;
+  animation-duration: 3s;
+}
+
+.myproject {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.info {
+  width: fit-content;
+  height: fit-content;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 400px;
+  border-radius: 5px;
+  border: solid var(--font-color);
+  ;
+}
+
+.imgproj {
+  width: 150px;
+  height: 125px;
+}
+
+@keyframes project {
+  0% {
+    left: px;
+    top: 1000px;
+  }
+
+  25% {
+    left: px;
+    top: px;
+  }
+
+  50% {
+    left: px;
+    top: 30px;
+  }
+
+  100% {
+    left: px;
+    top: 0px;
+  }
+}
+
+.icon {
+  font-size: 2em;
+  color: var(--font-color);
+  margin: 0 var(--spacing-1);
+}
+
+a {
+  color: var(--font-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#logo {
+  margin: 0;
+}
+
+#random-facts {
+  position: relative;
+  animation-name: project;
+  animation-duration: 4s;
+}
+
+
+#skills {
+  position: relative;
+  animation-name: skills;
+  animation-duration: 4s;
+}
+
+@keyframes skills {
+  0% {
+    left: px;
+    top: 1000px;
+  }
+
+  25% {
+    left: px;
+    top: px;
+  }
+
+  50% {
+    left: px;
+    top: 30px;
+  }
+
+  100% {
+    left: px;
+    top: 0px;
+  }
+}
+
+.preloader {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  background: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.disppear {
+  animation: vanish 4s forwards;
+}
+
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+}
+
+
+#skills-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#skills-container i {
+  font-size: 2em;
+  width: 2em;
+  margin-top: var(--spacing-1);
+}
+
+@media only screen and (max-width: 600px) {
+  .navigation-items {
+    padding: 16px;
+  }
+
+  .about-me-container {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  .portrait {
+    animation: none;
+  }
+
+  #projects {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project {
+    display: flex;
+    width: 353px;
+  }
+
+  img {
+    width: 247px;
+  }
+
+  #skills {
+    position: relative;
+  }
+}

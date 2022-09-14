@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="icon" type="image/ico" sizes="16x16" href="img/favicon.ico">
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="./all.min.css" />
+</head>
+
+
+<body>
+  <div class="preloader">
+    <img src="/img/loading-opaque.gif" alt="">
+    <h3>Loading...</h3>
+  </div>
+  <nav>
+    <a href="#">
+      <h2 id="logo">André </h2>
+    </a>
+    <ul class="navigation-items">
+      <li class="navigation-item" class="item1"><a href="#about-me">About Me</a></li>
+      <li class="navigation-item"><a href="#projects">Projects</a></li>
+      <li class="navigation-item"><a href="#skills">Skills</a></li>
+      <li class="navigation-item"><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about-me">
+      <div class="about-me-container">
+        <div class="about-me-text-container">
+          <h2>About Me</h2>
+          <p>
+            Hi! I'm André, am a Portuguese Junior Front-End based in Porto, amateur photographer and
+            electrical Engineer, i studied engineering in Instituto Superior de Engenharia
+            de Porto (ISEP) and in Politechnika Rzeszowska Poland (Erasmus).
+          </p>
+          <p>
+            In 2021 i started to study HTML, CSS and JS by myself,
+            i attended some bootcamps and did specialized training at FLAG (Porto).
+          </p>
+          <p>
+            In my free time I like to read, swim and play guitar.
+            I also like to take my chances of winning big.
+          </p>
+        </div>
+        <img src="img/me.jfif" alt="A photo of Ada Lovelace" class="portrait" />
+      </div>
+    </section>
+
+    <section id="projects">
+      <button onclick="hideProject()">Projects</button>
+
+      <div id="myDIV">
+        <div class="myproject">
+          <div class="project">
+            <div class="info">
+              <img class="imgproj" src="./img/film finder.png" alt="">
+              <p> Film Finder </p>
+              <a href="https://github.com/andremasilva/Film-Finder">Github</a>
+            </div>
+          </div>
+          <div class="project">
+            <div class="info">
+              <img class="imgproj" src="./img/site test.png" alt="">
+              <p> Lawyer Website </p>
+              <a href="https://github.com/andremasilva/lawyer-website">Github</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="random-facts">
+
+      <button onclick="randomfacts()">Random Facts</button>
+
+      <div id="randomDiv"> </div>
+    </section>
+
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div id="skills-container">
+        <i class="fab fa-html5"></i>
+        <i class="fab fa-css3-alt"></i>
+        <i class="fab fa-js"></i>
+        <i class="fab fa-react"></i>
+        <i class="fab fa-git"></i>
+        <i class="fab fa-chrome"></i>
+        <i class="fas fa-terminal"></i>
+        <i class="fab fa-github"></i>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2022 André Silva</footer>
+</body>
+
+<script src="app.js"></script>
+
+</html>
