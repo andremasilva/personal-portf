@@ -10,6 +10,6 @@ This is the source code for my portfolio website. I built this to showcase what 
 
 ## Demo
 
-You can visit the website by going [here](.netlify.app/).
+You can visit the website by going [here](https://andrefrontend.netlify.app/).
 
 # my-portfolio
